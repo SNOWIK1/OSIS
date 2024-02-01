@@ -1,0 +1,89 @@
+body {
+    background-color: rgb(255, 242, 225);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.person-data {
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 5px;
+}
+
+textarea {
+    resize: none;
+    text-overflow: ellipsis;
+}
+
+.reg-form {
+    margin-top: 100px;
+}
+
+.reg-btns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+button {
+    padding: 5px;
+    border: none;
+    background-color: rgb(255, 198, 128);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#dob {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    padding: 2px;
+    background-color: rgb(238, 238, 238);
+    margin-top: 5px;
+}
+
+@keyframes dob-anim {
+    from {
+        background-color: rgb(238, 238, 238);
+    }
+    to {
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+#dob:hover {
+    animation-name: dob-anim;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+textarea {
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+select {
+    padding: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#lang {
+    cursor: pointer;
+}
+
+.sex {
+    cursor: pointer;
+}

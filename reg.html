@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reg.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="reg-form">
+        <h2>Регистрация</h2>
+        <form>
+            <div class="username-input">
+                <label for="user">Имя пользователя</label><br />
+                <input type="text" class="person-data" placeholder="Ваше имя..."/>
+            </div><br />
+            <div class="email-inpput">
+                <label for="email">Электронная почта</label><br />
+                <input type="email" class="person-data" placeholder="Ваша почта..."/>
+            </div><br />
+            <div class="password-inpput">
+                <label for="pwd">Пароль</label><br />
+                <input type="password" class="person-data" placeholder="Придумайте пароль..."/>
+            </div><br />
+
+            <fieldset class="cities">
+                <legend>Укажите Ваш пол</legend>
+
+                <div>
+                    <input type="radio" id="male" name="sex" class="sex" value="male" checked />
+                    <label for="male">Мужской</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="female" name="sex" class="sex" value="female" />
+                    <label for="female">Женский</label>
+                </div>
+            </fieldset><br />
+
+            <div class="dob-section">
+                <label for="dob">Дата рождения</label><br/>
+                <input type="date" id="dob" name="trip-start" value="2018-07-22" min="1900-01-01"
+                    max="2024-01-23" /><br />
+            </div><br />
+
+            <fieldset class="langs">
+                <legend>Языки</legend>
+
+                <div>
+                    <input type="checkbox" id="lang" name="rus" checked />
+                    <label for="rus">Русский</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="lang" name="eng" />
+                    <label for="eng">English</label>
+                </div>
+            </fieldset><br />
+            <div class="city-section">
+                <label for="cities">Мой город:</label>
+                <select id="cities" name="cities">
+                    <option value="nsk">Новосибирск</option>
+                    <option value="msk">Москва</option>
+                    <option value="spb">Санкт-Петербург</option>
+                </select>
+            </div><br />
+            <div class="about-section">
+                <label for="about">О себе</label>
+                <br />
+                <textarea id="about" rows="10" cols="40"></textarea>
+            </div>
+        </form>
+
+        <div class="reg-btns">
+            <button type="submit">Зарегистрироваться</button>
+            <button type="reset">Отмена</button>
+        </div>
+    </div>
+</body>
+
+</html>
